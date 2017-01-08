@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<header>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />'
+</header>
+<div ng-app="myMode">
+    <p>在输入框中尝试输入：</p>
+    <p>姓名：<input type="text" ng-model="name"></p>
+
+
+    <hello></hello>
+
+
+{{name}}
+
+    <p ng-bind="name"></p>
+</div>
+
+<script src="angular-1.3.0.js"></script>
+
+<script type="text/javascript">
+
+var myModele=angular.module("myMode",[]);
+// ag指令设定
+myModele.directive("hello",function(){
+	return{		
+	 restrict:'E',
+	 template:'<div class="red">hello 2131313<strong>你好</strong>everyone</div>',
+	 replace:true
+	}
+
+})
+
+</script>
+<!-- css风格设置 -->
+<style type="text/css">
+.red{
+
+color:blue;
+}
+
+</style>
+
+</body>
+</html>
