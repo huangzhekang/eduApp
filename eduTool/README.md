@@ -16,14 +16,7 @@ bla bla bla...</br>
 <img src="resources/icon.png">
 
 # Learn More
-*This is my graduation design.
-<!-- <a href="http://www.cnblogs.com/Lxiaolong/p/5399008.html">**中文教程Blog**</a> -->
-<!-- 
-#License
-
-Social is open source and covered by a standard 2-clause BSD license. See the LICENSE file for more info.
-
-Social is Free Software licensed under the GNU General Public License. -->
+* This is my graduation design.
 
 
 
