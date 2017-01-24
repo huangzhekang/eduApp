@@ -1,0 +1,30 @@
+<html>  
+<head>  
+<title>标题</title>  
+</head>  
+<body>  
+    <div id="comment_ul_2"></div>  
+    <input type="button" id="addFun" value="click me" />  
+    <script type="text/javascript">  
+        var reg = new RegExp("([^\[]*?)\]", 'igm'); //i g m是指分别用于指定区分大小写的匹配、全局匹配和多行匹配。  
+        $("#addFun").click(function() {  
+            var html = document.getElementById("commentTemplate").innerHTML;  
+            var source = html.replace(reg, function(node, key) {  
+                return {  
+                    'UserImg' : '1',  
+                    'UserName' : '张',  
+                    'CreateDate' : '2011-1-1'  
+                }[key];  
+            });  
+            $("#comment_ul_2").append(source);  
+        });  
+        var zzl = "name:[name]";  
+        zzl = zzl.replace(reg, function(node, key) {  
+            return {  
+                'name' : '小明'  
+            }[key];  
+        });  
+        alert(zzl);  
+    </script>  
+</body>  
+</html>  

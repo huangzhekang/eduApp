@@ -1,0 +1,54 @@
+<ion-header-bar align-title="center" class="bar-stable">
+    <!-- <div class="h1 title login-title" >消息</div> -->
+    <div class="bar bar-header bar-assertive">
+    <h1 class="title"></h1>
+    <h1 class="title">消息</h1>
+    </div>
+</ion-header-bar>
+<ion-view ng-app='ionicApp'>
+    <ion-content has-bouncing="true" overflow-scroll="false">
+    <!-- 增加刷新功能 -->
+    <ion-refresher on-refresh="doRefresh()" pulling-text="上拉刷新..." refreshing-text="正在刷新!" refreshing-icon="ion-loading-c">
+    </ion-refresher>
+    <!-- 列表 -->
+        <ion-list  >
+            <ion-item class="item-remove-animate item-avatar item-icon-right" type="item-text-wrap"   href="#/tab/groupmsg">
+                <img ng-src="img/pku.jpg">
+                <h2>mike的消息</h2>
+                <p>准备吃饭了...</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+                <ion-option-button class="button-assertive" ng-click="remove(chat)">
+                    删除
+                </ion-option-button>
+            </ion-item>
+            <ion-item class="item-remove-animate item-avatar item-icon-right" type="item-text-wrap" href="#/tab/groupmsg">
+                <img ng-src="img/pku.jpg">
+                <h2>天翼足球协会</h2>
+                <p>发布一个特别的活动</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+                <ion-option-button class="button-assertive" ng-click="remove(chat)">
+                    删除
+                </ion-option-button>
+            </ion-item>
+            <ion-item class="item-remove-animate item-avatar item-icon-right" type="item-text-wrap" href="#/tab/activitymsg">
+                <img ng-src="img/pku.jpg">
+                <h2>mike的消息</h2>
+                <p>发布了一个新帖子</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+                <ion-option-button class="button-assertive" ng-click="remove(chat)">
+                    删除
+                </ion-option-button>
+            </ion-item>
+
+            <ion-item ng-repeat="item in items" class="item-remove-animate item-avatar item-icon-right" type="item-text-wrap" >
+                <img ng-src="img/pku.jpg">
+                <h2>{{item}}</h2>
+                <p>开发中...</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>   
+                 <ion-option-button class="button-assertive" ng-click="edit(item)">
+                    删除
+                </ion-option-button>     
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

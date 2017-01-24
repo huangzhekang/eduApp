@@ -1,0 +1,136 @@
+<ion-header-bar align-title="center" class="bar-stable">
+    <div class="buttons">
+        <button class="button button-icon ion-ios-arrow-left" ng-click="$ionicGoBack()">
+        </button>
+    </div>
+    <div class="h1 title login-title" >发帖</div>
+    <div class="buttons">
+      <a class="button login-register" ng-click="add()">
+        发布
+      </a>
+    </div>
+</ion-header-bar>
+<!-- <ion-view>
+    <ion-content> -->
+       <!--  <div class="list card">
+            <h5>&nbsp;&nbsp;分享至：</h5>
+            <div class="item"style="padding: 4px;">
+                <div class="row" >
+                    <div class="col group-cell-select gact">小组</div>
+                    <div class="col group-cell-select">小天</div>
+                    <div class="col group-cell-select">小米</div>
+                </div>
+            </div>
+            <textarea style="width: 100%;background-color: whitesmoke" placeholder="这里输入发布帖子内容" cols="30" rows="10"></textarea>
+            <img class="full-image" src="img/ben.png">
+            <h5>&nbsp;&nbsp;插入信息：</h5>
+            <div class="item"style="padding: 4px;">
+                <div class="row" >
+                    <div class="col group-cell-select">符号</div>
+                    <div class="col group-cell-select">图片</div>
+                    <div class="col group-cell-select">表情</div>
+                    <div class="col group-cell-select">字体</div>
+                </div>
+            </div>
+        </div> -->
+      <!--   <div on-double-tap="show()">
+   <div class="row padding">
+      <div class="col list card" style="height: 30%">
+        <div class="item item-body">
+          <img class="img-responsive" style="width:100%; border:1px solid #ffffff;"
+               ng-src="{{imgUrl+Images[0]}}" ng-click="onDoubleTap(0)">
+          <p>
+            小明
+          </p>
+        </div>
+      </div>
+      <div class="col list card" style="height: 30%">
+        <div class="item item-body">
+          <img class="img-responsive" style="width:100%; border:1px solid #ffffff;"
+               ng-src="{{imgUrl+Images[1]}}" ng-click="onDoubleTap(1)">
+          <p>
+            小白
+          </p>
+        </div>
+      </div>
+    </div>
+<div on-swipe-up="onSwipeUp()"></div>
+</div>
+    </ion-content>
+</ion-view> -->
+
+<ion-view   view-title="健康" >
+<div ng-click="show()" >
+  <!-- <ion-slide-box show-pager="false" delegate-handle="slide1" on-slide-changed="slideChanged($index)">
+    <ion-slide ng-repeat="slide in slides">on-double-tap=”show()“
+    
+      <ion-content>
+        <ion-refresher pulling-text="下拉刷新" on-refresh="slide.doRefresh()"></ion-refresher>
+        <div class="list has-header">
+          <a ng-repeat="item in slide.items" class="item item-thumbnail-right item-text-wrap" ng-click="goDetails(item,'{{slide.type}}')">
+            <img ng-src="{{imgUrl+item.img}}" width="30" height="30" alt="">
+            <h3>{{::item.title}}</h3>
+            <p>{{::item.description | substring:item.description}}</p>
+          </a> 
+        </div>
+        <ion-infinite-scroll ng-if="!slide.isload" on-infinite="slide.loadMore()" distance="1%">
+        </ion-infinite-scroll>
+      </ion-content>
+      
+    </ion-slide>
+  </ion-slide-box>
+  <ion-tabs delegate-handle="tab1" id="{{currentTabId}}" class="tabs-striped tabs-top">
+    <ion-tab ng-repeat="item in tabs" on-select="selectedTab($index)" title="{{item.name}}"></ion-tab>
+  </ion-tabs> -->
+   <div class="row padding" ng-repeat="allimg in allimgs">
+    <!--   <div ng-repeat="allimg in allimgs"  class="col list card" style="height: 30%">
+        <div class="item item-body">
+          <img class="img-responsive" style="width:100%; border:1px solid #ffffff;"
+               ng-src="{{allimg.imgsrc}}" ng-click="onDoubleTap(0)">
+          <p>
+            小明
+          </p>
+        </div>
+      </div> -->
+
+    <div class="col list card" style="height: 30%">
+        <div class="item item-body">
+          <img class="img-responsive" style="width:100%; border:1px solid #ffffff;"
+               ng-src="{{imgUrl+Images[0]}}" ng-click="onDoubleTap(0)">
+          <p>
+            小明
+          </p>
+        </div>
+      </div>
+
+
+
+      <div class="col list card" style="height: 30%">
+        <div class="item item-body">
+          <img class="img-responsive" style="width:100%; border:1px solid #ffffff;"
+               ng-src="{{imgUrl+Images[1]}}" ng-click="onDoubleTap(1)">
+          <p>
+            小白
+          </p>
+        </div>
+      </div>
+    </div>
+ <!--    <ion-slide-box  show-pager="true" >  
+        <ion-slide>  
+            <img src="img/mike.png">  
+        </ion-slide>  
+        <ion-slide>  
+            <img src="img/ben.png">  
+        </ion-slide>  
+        <ion-slide>  
+            <img src="img/mike.png">  
+        </ion-slide>  
+        <ion-slide>  
+            <img src="img/ben.png">  
+        </ion-slide>  
+    </ion-slide-box>  -->
+<div on-swipe-up="onSwipeUp()"></div>
+<!-- <ion-footer-bar align-title="left" class="bar-assertive">
+   </div>
+</ion-footer-bar> -->
+</ion-view>

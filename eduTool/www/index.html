@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link href="css/img-enable-show.css" rel="stylesheet"> 
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+ <!--    <script src="lib/ngCordova/dist/ng-cordova.js"></script> -->
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <!-- <script src="cordova.js"></script> -->
+   <!--   <script src="lib/ionic/js/ionic.bundle.js"></script>
+      <script src="js/app.js"></script> -->
+   
+   <!--  <script src="lib/ionic/js/ionic.bundle.js"></script> -->
+     <!-- ionic/angularjs js -->
+    
+<!--     <script src="js/hammer.js"></script>        
+    <script type="text/javascript" src="js/img-directive.js"></script>
+    <script type="text/javascript" src="js/img-service.js"></script> -->
+  </head>
+  <body>
+    <!--z
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view></ion-nav-view>
+    <!-- 使用require.js（1）实现js文件的异步加载，避免网页失去响应；
+　　（2）管理模块之间的依赖性，便于代码的编写和维护。 data-main属性的作用是，指定网页程序的主模块-->
+    <script src="lib/requirejs/require.js" data-main="js/require-config.js"></script>
+  <!--    <script src="lib/ionic-native-transitions/dist/ionic-native-transitions.min.js"></script> -->
+     
+    <!-- <script src="lib/ionic-image-lazy-load.js"></script> -->
+  </body>
+</html>
