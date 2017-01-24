@@ -13,20 +13,17 @@ bla bla bla...</br>
 	
 # The Screenshot
 
-<img src="resources/demo0.png">
-<img src="resources/demo1.png">
-<img src="resources/demo2.png">
-<img src="resources/demo3.png">
+<img src="resources/icon.png">
 
 # Learn More
-
-<a href="http://www.cnblogs.com/Lxiaolong/p/5399008.html">**中文教程Blog**</a>
-
+*This is my graduation design.
+<!-- <a href="http://www.cnblogs.com/Lxiaolong/p/5399008.html">**中文教程Blog**</a> -->
+<!-- 
 #License
 
 Social is open source and covered by a standard 2-clause BSD license. See the LICENSE file for more info.
 
-Social is Free Software licensed under the GNU General Public License.
+Social is Free Software licensed under the GNU General Public License. -->
 
 
 
